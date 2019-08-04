@@ -1,3 +1,6 @@
+Get-Content -Path 'C:\ProgramData\chocolatey\logs\chocolatey.log'
+Exit 1
+
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
