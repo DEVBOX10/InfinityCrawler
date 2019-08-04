@@ -3,14 +3,12 @@ image: Visual Studio 2017
 skip_branch_with_pr: true
 
 install:
-  - choco install opencover
-#  - ps: .\build\dotnet-install.ps1 -Version 3.0.100-preview5-011568
+  - choco install opencover codecov
+  - ps: .\build\dotnet-install.ps1 -Version 3.0.100-preview5-011568
 
   
 build_script:
-  - ps: .\custom-chocolatey.ps1
-  - ps: Exit 1
-#  - ps: .\build.appveyor.ps1 -IsTagBuild ([System.Convert]::ToBoolean($env:APPVEYOR_REPO_TAG))
+  - ps: .\build.appveyor.ps1 -IsTagBuild ([System.Convert]::ToBoolean($env:APPVEYOR_REPO_TAG))
   
 test: false
 artifacts:
