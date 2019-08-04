@@ -1,4 +1,4 @@
-Get-Content -Path 'C:\ProgramData\chocolatey\logs\chocolatey.log'
+#Get-Content -Path 'C:\ProgramData\chocolatey\logs\chocolatey.log'
 Exit 1
 
 # Chocolatey profile
