@@ -6,7 +6,7 @@ param(
 
 Write-Host "Initialising AppVeyor build..." -ForegroundColor "Magenta"
 
-$Env:Path
+OpenCover.Console.exe
 
 if ($IsTagBuild) {
 	.\build.ps1 -CreatePackages $True
