@@ -1,1 +1,1 @@
-$env:LOCALAPPDATA/Apps/OpenCover/OpenCover.Console.exe
+Invoke-Expression "$env:LOCALAPPDATA\Apps\OpenCover\OpenCover.Console.exe"
