@@ -1,17 +1,12 @@
 # Chocolatey profile
-Write-Host $profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Write-Host "Trying import..."
   Import-Module "$ChocolateyProfile"
 }
-Write-Host $profile
 
 refreshenv
-OpenCover.Console.exe
-Exit 1
-Write-Host "$((Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment\' -Name 'PATH').Path); $((Get-ItemProperty -Path 'HKCU:\Environment' -Name 'PATH').Path)"
-Exit 1
+
 $packageName = 'opencover'
 $installerType = 'msi'
 $silentArgs= ''
