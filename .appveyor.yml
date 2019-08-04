@@ -8,6 +8,7 @@ install:
 
   
 build_script:
+  - OpenCover.Console.exe
   - ps: .\build.appveyor.ps1 -IsTagBuild ([System.Convert]::ToBoolean($env:APPVEYOR_REPO_TAG))
   
 test: false
