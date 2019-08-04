@@ -8,9 +8,7 @@ install:
 
   
 build_script:
-  - ps: Test-Path %ProgramFiles%\OpenCover
-  - ps: Test-Path '%ProgramFiles(x86)%\OpenCover'
-  - ps: Test-Path %LocalAppData%\Apps\OpenCover
+  - ps: Get-ChildItem -Path C:\ProgramData\chocolatey\lib\
   - ps: .\build.appveyor.ps1 -IsTagBuild ([System.Convert]::ToBoolean($env:APPVEYOR_REPO_TAG))
   
 test: false
