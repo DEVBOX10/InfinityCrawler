@@ -1,1 +1,1 @@
-%LocalAppData%/Apps/OpenCover/OpenCover.Console.exe
+$env:LOCALAPPDATA/Apps/OpenCover/OpenCover.Console.exe
