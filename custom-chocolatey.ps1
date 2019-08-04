@@ -1,13 +1,11 @@
 # Chocolatey profile
-\. $profile
-$profile
+Write-Host $profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Write-Host "Trying import..."
   Import-Module "$ChocolateyProfile"
 }
-\. $profile
-$profile
+Write-Host $profile
 
 refreshenv
 OpenCover.Console.exe
