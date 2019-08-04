@@ -6,6 +6,8 @@ param(
 
 Write-Host "Initialising AppVeyor build..." -ForegroundColor "Magenta"
 
+Get-ChildItem Env:
+
 if ($IsTagBuild) {
 	.\build.ps1 -CreatePackages $True
 }
