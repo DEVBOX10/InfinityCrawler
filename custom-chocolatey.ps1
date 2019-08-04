@@ -1,12 +1,15 @@
 # Chocolatey profile
+. $profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Write-Host "Trying import..."
   Import-Module "$ChocolateyProfile"
 }
+. $profile
 
 refreshenv
 OpenCover.Console.exe
+codecov
 Exit 1
 Write-Host "$((Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment\' -Name 'PATH').Path); $((Get-ItemProperty -Path 'HKCU:\Environment' -Name 'PATH').Path)"
 Exit 1
