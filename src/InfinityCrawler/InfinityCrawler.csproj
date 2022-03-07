@@ -12,7 +12,7 @@
     <PackageReference Include="HtmlAgilityPack" Version="1.11.37" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.12" />
     <PackageReference Include="TurnerSoftware.RobotsExclusionTools" Version="0.7.0" />
-    <PackageReference Include="TurnerSoftware.SitemapTools" Version="0.6.0" />
+    <PackageReference Include="TurnerSoftware.SitemapTools" Version="0.7.1+gfdfd467-github.1855811611" />
   </ItemGroup>
 
 </Project>
